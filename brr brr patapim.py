@@ -11,12 +11,13 @@ for _ in range(t):
     for i in range(n):
         r = list(map(int,input().split()))
         codes+=r
-    
-    
+       
     m = mex(codes)
-    password = [str(m)]
+    m = str(m)
     for i in codes:
-        if not str(i) in password:
-            password.append(str(i))
-    print(" ".join(password))
+        if str(i) not in m:
+            m+=" " + str(i)
+   
+    
+    print(m)
     

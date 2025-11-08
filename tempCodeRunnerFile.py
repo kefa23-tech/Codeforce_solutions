@@ -1,2 +1,2 @@
-     if s[i] == s[i+1] and s[i] == '/':
-            s.pop(i)
+     max_cakes+=cake*m
+            m-=1
